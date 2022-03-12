@@ -1,0 +1,30 @@
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card-Holder {
+  width: 930px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+}
+
+.App-round {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media (max-width: 376px) {
+  .App {
+    height: 100%;
+    width: 100%;
+    margin: 8rem 0;
+  }
+
+  .Card-Holder {
+    grid-template-columns: 1fr;
+  }
+}
